@@ -26,13 +26,13 @@
         class="flex-col bg-pomodoro-pr size-96 m-12 rounded-3xl p-3"
       >
         <div id="buttons" class="m-2 flex justify-evenly text-pomodoro-txt">
-          <button id="work" class="p-2 text-lg" onclick="">
+          <button id="work" class="p-2 text-lg" onclick="setTimer(25)">
             Work <span class="res">Time!</span>
           </button>
-          <button id="short" class="p-2 text-lg" onclick="">
+          <button id="short" class="p-2 text-lg" onclick="setTimer(5)">
             Short <span class="res">Break</span>
           </button>
-          <button id="long" class="p-2 text-lg" onclick="">
+          <button id="long" class="p-2 text-lg" onclick="setTimer(10)">
             Long <span class="res">Break</span>
           </button>
         </div>
@@ -46,8 +46,16 @@
           <button
             id="start"
             class="px-8 py-2 m-2 rounded-lg bg-shadow text-pomodoro-txt"
+            onclick="Timer()"
           >
             Start
+          </button>
+          <button
+            id="Reset"
+            class="px-8 py-2 m-2 rounded-lg bg-shadow text-pomodoro-txt"
+            onclick="resetTimer()"
+          >
+            Reset
           </button>
         </div>
       </div>
