@@ -5,43 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro</title>
     <link href="../dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./input.css" />
   </head>
 
   <body class="max-h-vh flex-col justify-center">
     <nav class="flex justify-center">
-      <div id="nav" class="flex px-8 py-3 rounded-3xl bg-pomodoro-pr justify-center">
+      <div
+        id="nav"
+        class="flex px-8 py-3 rounded-3xl bg-pomodoro-pr justify-center"
+      >
         <a href="./index.html"
           ><img class="p-1 size-14" src="./images/tomato_4478333.png" alt=""
         /></a>
         <h1 class="p-2 text-3xl text-pomodoro-txt">Pomodoro Timer</h1>
       </div>
     </nav>
-    <div id="middle" class="flex m-20 justify-center ">
+    <div id="middle" class="flex m-20 justify-center">
       <div
         id="timer"
-        class="flex-col bg-pomodoro-pr size-96 m-12 justify-center rounded-3xl p-3 "
+        class="flex-col bg-pomodoro-pr size-96 m-12 rounded-3xl p-3"
       >
-        <div id="buttons" class="m-2 flex justify-center text-pomodoro-txt">
-          <button id="work" class="p-2 text-lg" onclick="">Work <span class="res">Time!</span></button>
-          <button id="short" class="p-2 text-lg" onclick="">Short <span class="res">Break</span></button>
-          <button id="long" class="p-2 text-lg" onclick="">Long <span class="res">Break</span></button>
+        <div id="buttons" class="m-2 flex justify-evenly text-pomodoro-txt">
+          <button id="work" class="p-2 text-lg" onclick="">
+            Work <span class="res">Time!</span>
+          </button>
+          <button id="short" class="p-2 text-lg" onclick="">
+            Short <span class="res">Break</span>
+          </button>
+          <button id="long" class="p-2 text-lg" onclick="">
+            Long <span class="res">Break</span>
+          </button>
         </div>
         <div
           id="time-left"
-          class="flex bg-pomodoro-sec m-2 rounded-2xl w-81 h-52 justify-center items-center text-pomodoro-txt"
+          class="flex bg-pomodoro-sec m-2 rounded-2xl w-81 h-52 justify-center items-center text-pomodoro-txt text-8xl"
         >
           25:00
-        </div class="flex justify-center">
-        <button
-          id="start"
-          class="w-full rounded-3xl bg-pomodoro-txt text-pomodoro-bg"
-        >
-          Start
-        </button>
+        </div>
+        <div class="flex justify-center">
+          <button
+            id="start"
+            class="px-8 py-2 m-2 rounded-lg bg-shadow text-pomodoro-txt"
+          >
+            Start
+          </button>
+        </div>
       </div>
       <div id="tasks" class="w-1/3 m-12">
-
         <input
           type="text"
           id="task"
@@ -52,7 +62,7 @@
           id="add"
           class="w-full p-2 m-2 rounded-3xl bg-pomodoro-pr text-pomodoro-txt"
           onclick="addTask()"
-        >        
+        >
           Add
         </button>
         <ul id="task-list">
@@ -69,6 +79,8 @@
   </body>
 
   <footer class="flex justify-center items-center">
-    <a href="https://www.freepik.com/icon/tomato_4478333" target="_blank">Icon by Freepik</a>
+    <a href="https://www.freepik.com/icon/tomato_4478333" target="_blank"
+      >Icon by Freepik</a
+    >
   </footer>
 </html>

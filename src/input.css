@@ -5,13 +5,18 @@
 :root{
     --pomodoro-bg: #FECFCF;
     --pomodoro-pr: #eabfe7;
-    --pomodoro-sec: #EBA2A2;
+    --pomodoro-sec: rgb(251 217 252);
     --pomodoro-txt: #864444;
     --gradient-start: rgba(238,174,202,1);
     --gradient-end: rgba(148,187,233,1);
+    --shadow:  rgb(223, 168, 218);
 }
 
 @media screen and (max-width: 1000px) {
+    /* nav {
+        background-color: var(--pomodoro-pr);
+    } */
+
     #middle {
         display: flex;
         flex-direction: column;
@@ -21,16 +26,22 @@
 
     #tasks {
         width: 75%;
+        margin: 1.5rem;
+    }
+    
+    .res {
+        display: none;
     }
 }
 
     
     
 body{
-    background: rgb(238,174,202);
+    background: var(--shadow);
     background: linear-gradient(151deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
     background-repeat: no-repeat;
     min-height: 100vh;
+    min-width: 100vw;
 }
 ul li{
     list-style-type: none;
@@ -43,15 +54,19 @@ ul li{
 }
 
 #buttons button:hover{
-    background-color: rgb(223, 168, 218);
+    background-color: var(--shadow);
 
 }
 
 #add:hover{
-    background-color: rgb(223, 168, 218);
+    background-color: var(--shadow);
 }
 
 #nav:hover{
-    background-color: rgb(223, 168, 218);
+    background-color: var(--shadow);
+}
+
+#start:hover{
+    background-color:  rgb(215, 152, 210);
 }
 

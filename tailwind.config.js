@@ -9,8 +9,9 @@ module.exports = {
       colors: {
         'pomodoro-bg': '#FECFCF',
         'pomodoro-pr': '#eabfe7',
-        'pomodoro-sec': '#EBA2A2',
+        'pomodoro-sec': '#fbd9fc',
         'pomodoro-txt': '#864444',
+        'shadow': '#dfa8da',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif']

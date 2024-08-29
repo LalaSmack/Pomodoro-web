@@ -16,3 +16,4 @@ function addTask() {
         task.value = '';
     }
 }
+
