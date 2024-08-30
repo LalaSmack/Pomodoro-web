@@ -34,7 +34,7 @@ function Timer() {
     var timeArray = time.innerHTML.split(':');
     var minutes = parseInt(timeArray[0]);
     var seconds = parseInt(timeArray[1]);
-    var audio = new Audio('sounds/microwave-timer-117077.mp3');
+    var audio = new Audio('src/sounds/microwave-timer-117077.mp3');
     ongoing = true;
     console.log(ongoing);
     var countdown = setInterval(function() {
@@ -64,7 +64,6 @@ function Timer() {
         if (minutes === 0 && seconds === 0) {
             clearInterval(countdown);
             audio.play();
-            start.innerHTML = 'Start';
             time.innerHTML = prevTime;
         } else if (seconds === 0) {
             minutes--;
