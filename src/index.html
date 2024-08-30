@@ -15,7 +15,10 @@
         class="flex px-8 py-3 rounded-3xl bg-pomodoro-pr justify-center"
       >
         <a href="./index.html"
-          ><img class="p-1 size-14" src="./images/tomato_4478333.png" alt=""
+          ><img
+            class="p-1 size-14 opacity-80"
+            src="./images/tomato_4478333.png"
+            alt=""
         /></a>
         <h1 class="p-2 text-3xl text-pomodoro-txt">Pomodoro Timer</h1>
       </div>
@@ -73,13 +76,23 @@
           class="w-full p-2 m-2 rounded-3xl"
           placeholder="Add a task"
         />
-        <button
-          id="add"
-          class="w-full p-2 m-2 rounded-3xl bg-pomodoro-pr text-pomodoro-txt"
-          onclick="addTask()"
-        >
-          Add
-        </button>
+        <div class="flex">
+          <button
+            id="add"
+            class="w-2/4 p-2 m-2 rounded-3xl bg-pomodoro-pr text-pomodoro-txt"
+            onclick="addTask()"
+          >
+            Add
+          </button>
+          <button
+            id="clear"
+            class="w-2/4 p-2 m-2 rounded-3xl bg-pomodoro-pr text-pomodoro-txt"
+            onclick="deleteTasks()"
+          >
+            Clear
+          </button>
+        </div>
+
         <ul id="task-list">
           <!-- <li class="p-2 m-2 rounded-3xl bg-pomodoro-pr text-pomodoro-txt">
             Task 1

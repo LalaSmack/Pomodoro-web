@@ -2,9 +2,8 @@ const task = document.getElementById('task');
 const tasklist = document.getElementById('task-list');
 var time = document.getElementById('time-left');
 var start = document.getElementById('start');
-const work = document.getElementById('work');
-const shortBreak = document.getElementById('short');
-const longBreak = document.getElementById('long');
+
+tasklist.addEventListener('click', checkTask);
 var stop = false;
 var pause = false;
 var change = false;
@@ -91,5 +90,22 @@ function resetTimer() {
 function pauseTimer() {
     if (ongoing) {
         pause = true;
+    }
+}
+
+function checkTask(e) {
+    let item = e.target;
+    if (item.style.textDecoration === 'line-through') {
+        item.style.backgroundColor = '#eabfe7';
+        item.style.textDecoration = 'none';
+    } else {
+        item.style.textDecoration = 'line-through';
+        item.style.backgroundColor = '#dfa8da';
+    }
+}
+
+function deleteTasks() {
+    for (let i = tasklist.children.length - 1; i >= 0; i--) {
+        tasklist.children[i].remove();
     }
 }
