@@ -14,7 +14,6 @@ function addTask() {
     if (task.value === '') {
         alert('Please enter a task');
     } else {
-        const tasks = document.getElementById('tasks');
         const newTask = document.createElement('li');
         newTask.innerHTML = task.value;
         tasklist.appendChild(newTask);
@@ -95,12 +94,15 @@ function pauseTimer() {
 
 function checkTask(e) {
     let item = e.target;
+    if (item === tasklist) {
+        return;
+    }
     if (item.style.textDecoration === 'line-through') {
-        item.style.backgroundColor = '#eabfe7';
+        item.style.backgroundColor = '#f0a5a5';
         item.style.textDecoration = 'none';
     } else {
         item.style.textDecoration = 'line-through';
-        item.style.backgroundColor = '#dfa8da';
+        item.style.backgroundColor = '#ceeeae';
     }
 }
 
