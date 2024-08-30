@@ -79,7 +79,9 @@ function Timer() {
 }
 
 function resetTimer() {
-    stop = true;
+    if (ongoing) {
+        stop = true;
+    }
     time.innerHTML = prevTime;
 
     // stop = false;
