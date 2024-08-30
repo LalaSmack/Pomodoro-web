@@ -72,7 +72,11 @@ function Timer() {
         } else {
             seconds--;
         }
-        time.innerHTML = minutes + ':' + seconds;
+        if (seconds < 10) {
+            time.innerHTML = minutes + ':' + '0' + seconds;
+        }
+        else {time.innerHTML = minutes + ':' + seconds;
+        }
     }, 1000);
 }
 
