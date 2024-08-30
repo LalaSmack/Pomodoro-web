@@ -27,13 +27,13 @@
       >
         <div id="buttons" class="m-2 flex justify-evenly text-pomodoro-txt">
           <button id="work" class="p-2 text-lg" onclick="setTimer(25)">
-            Work <span class="res">Time!</span>
+            Work Time!
           </button>
           <button id="short" class="p-2 text-lg" onclick="setTimer(5)">
-            Short <span class="res">Break</span>
+            Short Break
           </button>
           <button id="long" class="p-2 text-lg" onclick="setTimer(10)">
-            Long <span class="res">Break</span>
+            Long Break
           </button>
         </div>
         <div
@@ -45,14 +45,21 @@
         <div class="flex justify-center">
           <button
             id="start"
-            class="px-8 py-2 m-2 rounded-lg bg-shadow text-pomodoro-txt"
+            class="px-8 py-2 m-2 rounded-lg bg-shadow text-pomodoro-txt timer-button"
             onclick="Timer()"
           >
             Start
           </button>
           <button
-            id="Reset"
-            class="px-8 py-2 m-2 rounded-lg bg-shadow text-pomodoro-txt"
+            id="pause"
+            class="px-8 py-2 m-2 rounded-lg bg-shadow text-pomodoro-txt timer-button"
+            onclick="pauseTimer()"
+          >
+            Pause
+          </button>
+          <button
+            id="reset"
+            class="px-8 py-2 m-2 rounded-lg bg-shadow text-pomodoro-txt timer-button"
             onclick="resetTimer()"
           >
             Reset
