@@ -8,10 +8,11 @@ module.exports = {
       },
       colors: {
         'pomodoro-bg': '#FECFCF',
-        'pomodoro-pr': '#eabfe7',
-        'pomodoro-sec': '#fbd9fc',
-        'pomodoro-txt': '#844a85',
-        'shadow': '#dfa8da',
+        'pomodoro-pr': '#f0a5a5',
+        'pomodoro-sec': '#f9cecc',
+        'pomodoro-txt': '#780b0b',
+        'shadow': '#f08989',
+        'timer': '#bc3939',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif']

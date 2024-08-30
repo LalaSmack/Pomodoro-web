@@ -4,12 +4,12 @@
 
 :root{
     --pomodoro-bg: #FECFCF;
-    --pomodoro-pr: #eabfe7;
-    --pomodoro-sec: rgb(251 217 252);
-    --pomodoro-txt: rgb(132 74 133);
+    --pomodoro-pr: #f0a5a5;
+    --pomodoro-sec: #f9cecc;
+    --pomodoro-txt: #780b0b;
     --gradient-start: rgba(238,174,202,1);
     --gradient-end: rgba(148,187,233,1);
-    --shadow:  rgb(223, 168, 218);
+    --shadow:  #f08989;
 }
 
 @media screen and (max-width: 1000px) {
@@ -34,7 +34,8 @@
     
 body{
     /* background: var(--shadow); */
-    background: linear-gradient(151deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    /* background: linear-gradient(151deg, var(--gradient-start) 0%, var(--gradient-end) 100%); */
+    background: linear-gradient(151deg, rgba(206,238,174,1) 0%, rgba(236,174,181,1) 49%, rgba(240,171,140,1) 100%);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
@@ -69,6 +70,6 @@ li:hover{
 }
 
 .timer-button:hover{
-    background-color:  rgb(215, 152, 210);
+    background-color:  rgb(225, 108, 108);
 }
 
