@@ -10,7 +10,7 @@ module.exports = {
         'pomodoro-bg': '#FECFCF',
         'pomodoro-pr': '#eabfe7',
         'pomodoro-sec': '#fbd9fc',
-        'pomodoro-txt': '#864444',
+        'pomodoro-txt': '#844a85',
         'shadow': '#dfa8da',
       },
       fontFamily: {

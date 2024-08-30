@@ -6,7 +6,7 @@
     --pomodoro-bg: #FECFCF;
     --pomodoro-pr: #eabfe7;
     --pomodoro-sec: rgb(251 217 252);
-    --pomodoro-txt: #864444;
+    --pomodoro-txt: rgb(132 74 133);
     --gradient-start: rgba(238,174,202,1);
     --gradient-end: rgba(148,187,233,1);
     --shadow:  rgb(223, 168, 218);
@@ -33,7 +33,7 @@
     
     
 body{
-    background: var(--shadow);
+    /* background: var(--shadow); */
     background: linear-gradient(151deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -47,6 +47,10 @@ ul li{
     border-radius: 1.5rem;
     background-color: var(--pomodoro-pr);
     color: var(--pomodoro-txt);
+}
+
+li:hover{
+    background-color: var(--shadow);
 }
 
 #buttons button:hover{
