@@ -65,6 +65,7 @@ function Timer() {
             clearInterval(countdown);
             audio.play();
             time.innerHTML = prevTime;
+            return;
         } else if (seconds === 0) {
             minutes--;
             seconds = 59;
